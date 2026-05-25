@@ -2,53 +2,21 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Погода</title>
+    <title>Погода - сейчас, завтра, 5 дней</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Узнать погоду</h2>
-
-    <input type="text" id="cityInput" placeholder="Введите город">
-    <button id="getBtn">Показать</button>    
+    <h2>Прогноз погоды</h2>
+    <div>
+        <input type="text" id="cityInput" placeholder="Введите город" value="Москва">
+        <button id="showBtn">Показать</button>
+    </div>
+    <div class="mode-buttons">
+        <button class="mode-btn" data-mode="now">Сейчас</button>
+        <button class="mode-btn" data-mode="tomorrow">Завтра</button>
+        <button class="mode-btn" data-mode="5days">5 дней</button>
+    </div>
     <div id="result"></div>
-
-    <script>
-        const cityInput = document.getElementById('cityInput');
-        const getBtn = document.getElementById('getBtn');
-        const result = document.getElementById('result');
-
-        getBtn.addEventListener('click', async function () {
-            const city = cityInput.value.trim();
-            if (!city) {
-                alert('Введите город');
-                return;
-            }
-
-            try {               
-                const response = await fetch(`/weather?city=${city}`);
-                const data = await response.json(); 
-               
-                if (data.cod === '404') {
-                    result.innerHTML = `<p> Город "${city}" не найден.</p>`;
-                    return;
-                }
-
-               
-                const html = `
-                        <p><strong>Город:</strong> ${data.name}</p>
-                        <p><strong>Температура:</strong> ${data.main.temp} °C</p>
-                        <p><strong>Ощущается как:</strong> ${data.main.feels_like} °C</p>
-                        <p><strong>Погода:</strong> ${data.weather[0].description}</p>
-                        <p><strong>Влажность:</strong> ${data.main.humidity}%</p>
-                        <p><strong>Ветер:</strong> ${data.wind.speed} м/с</p>
-                        <p><strong>Давление:</strong> ${data.main.pressure} гПа</p>
-                    `;
-                result.innerHTML = html;
-
-            } catch (error) {
-                result.innerHTML = '<p>Ошибка при получении данных.</p>';
-                console.error(error);
-            }
-        });
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>

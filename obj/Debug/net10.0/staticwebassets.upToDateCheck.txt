@@ -1,2 +1,6 @@
+wwwroot\app.js
+wwwroot\style.css
 wwwroot\index.html
+C:\Projects\OpenWeatherMap\OpenWeatherMap\wwwroot\app.js
+C:\Projects\OpenWeatherMap\OpenWeatherMap\wwwroot\style.css
 C:\Projects\OpenWeatherMap\OpenWeatherMap\wwwroot\index.html

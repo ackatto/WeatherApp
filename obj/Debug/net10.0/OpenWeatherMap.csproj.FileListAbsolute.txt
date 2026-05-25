@@ -28,4 +28,7 @@ C:\Projects\OpenWeatherMap\OpenWeatherMap\obj\Debug\net10.0\OpenWeatherMap.pdb
 C:\Projects\OpenWeatherMap\OpenWeatherMap\obj\Debug\net10.0\OpenWeatherMap.genruntimeconfig.cache
 C:\Projects\OpenWeatherMap\OpenWeatherMap\obj\Debug\net10.0\ref\OpenWeatherMap.dll
 C:\Projects\OpenWeatherMap\OpenWeatherMap\bin\Debug\net10.0\OpenWeatherMap.staticwebassets.runtime.json
-C:\Projects\OpenWeatherMap\OpenWeatherMap\obj\Debug\net10.0\compressed\hxi414j6u5-{0}-0yvn0ouzk7-0yvn0ouzk7.gz
+C:\Projects\OpenWeatherMap\OpenWeatherMap\obj\Debug\net10.0\OpenWeatherMap.sourcelink.json
+C:\Projects\OpenWeatherMap\OpenWeatherMap\obj\Debug\net10.0\compressed\35qdp6j3y2-{0}-4w68wogy2v-4w68wogy2v.gz
+C:\Projects\OpenWeatherMap\OpenWeatherMap\obj\Debug\net10.0\compressed\eyxfd9ldj4-{0}-ewpl7k8iqk-ewpl7k8iqk.gz
+C:\Projects\OpenWeatherMap\OpenWeatherMap\obj\Debug\net10.0\compressed\hxi414j6u5-{0}-uf3y7lktm1-uf3y7lktm1.gz
